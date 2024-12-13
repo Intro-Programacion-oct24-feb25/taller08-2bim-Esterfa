@@ -15,6 +15,24 @@ public class Problema03 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+         int maxStars = 5;
+
+        // Parte superior: Aumentando el número de estrellas
+        for (int i = 1; i <= maxStars; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println(); // Salto de línea
+        }
+
+        // Parte inferior: Disminuyendo el número de estrellas
+        for (int i = maxStars; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println(); // Salto de línea
+        }
+    }
     }
     
-}
+        
